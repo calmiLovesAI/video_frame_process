@@ -39,7 +39,7 @@ if __name__ == '__main__':
     # 帧尺寸
     frame_size = (int(video_capture_2.get(cv2.CAP_PROP_FRAME_WIDTH)), int(video_capture_2.get(cv2.CAP_PROP_FRAME_HEIGHT)))
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    video_writer = cv2.VideoWriter(video_save_path, fourcc, fps, frame_sizvideo_capture_2
+    video_writer = cv2.VideoWriter(video_save_path, fourcc, fps, frame_size)
     num_of_frame = 0    # 帧数
     while True:
         sucess, frame = video_capture_2.read()
